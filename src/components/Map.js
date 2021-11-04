@@ -6,8 +6,8 @@ const Map = () => {
 	const [lan, setLan] = useState(24.945831)
 
 	setInterval(() => {
-		setLat(prevLat => prevLat + 0.0000001);
-		setLan(prevLan => prevLan + 0.0000001);
+		setLat(prevLat => prevLat + 0.0000001)
+		setLan(prevLan => prevLan + 0.0000001)
 	}, 500)
 
 	return (
