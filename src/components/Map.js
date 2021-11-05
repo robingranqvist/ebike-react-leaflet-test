@@ -1,27 +1,30 @@
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-import React, { useState } from 'react'
+import { MapContainer, TileLayer, Marker } from 'react-leaflet'
+import React, { useState, useEffect } from 'react'
+import { ref, onValue} from "firebase/database"
+import db from '../utils/firebase'
 
 const Map = () => {
-	const [lat, setLat] = useState(60.192059)
-	const [lan, setLan] = useState(24.945831)
+	const [bikes, setBikes] = useState([])
 
-	setInterval(() => {
-		setLat(prevLat => prevLat + 0.0000001)
-		setLan(prevLan => prevLan + 0.0000001)
-	}, 500)
+	useEffect(() => {
+		const bikesRef = ref(db, 'bikes')
+		onValue(bikesRef, (snapshot) => {
+			let items = []
+			snapshot.forEach((s) => {
+				items.push(s.val())
+			})
+			setBikes(items)
+		});
+	}, [])
 
 	return (
 		<div>
-			<MapContainer center={[lat, lan]} zoom={13} scrollWheelZoom={true}>
+			<MapContainer center={[60.192123, 24.945831]} zoom={9} scrollWheelZoom={true}>
 				<TileLayer
 					attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 					url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 				/>
-				<Marker position={[lat, lan]}> 
-					<Popup>
-						A pretty CSS3 popup. <br /> Easily customizable.
-					</Popup>
-				</Marker>
+				{ bikes.map(bike => ( <Marker position={[bike.lat, bike.lan]} key={bike.id}></Marker> )) }
 			</MapContainer>
 		</div>
 	)
