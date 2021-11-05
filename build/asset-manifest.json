@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/react-leaflet-vanilla/static/css/main.4e0ab58f.chunk.css",
-    "main.js": "/react-leaflet-vanilla/static/js/main.f2b73551.chunk.js",
-    "main.js.map": "/react-leaflet-vanilla/static/js/main.f2b73551.chunk.js.map",
-    "runtime-main.js": "/react-leaflet-vanilla/static/js/runtime-main.1ece99fa.js",
-    "runtime-main.js.map": "/react-leaflet-vanilla/static/js/runtime-main.1ece99fa.js.map",
-    "static/js/2.d030ea51.chunk.js": "/react-leaflet-vanilla/static/js/2.d030ea51.chunk.js",
-    "static/js/2.d030ea51.chunk.js.map": "/react-leaflet-vanilla/static/js/2.d030ea51.chunk.js.map",
-    "static/js/3.a21b49cb.chunk.js": "/react-leaflet-vanilla/static/js/3.a21b49cb.chunk.js",
-    "static/js/3.a21b49cb.chunk.js.map": "/react-leaflet-vanilla/static/js/3.a21b49cb.chunk.js.map",
-    "index.html": "/react-leaflet-vanilla/index.html",
-    "static/css/main.4e0ab58f.chunk.css.map": "/react-leaflet-vanilla/static/css/main.4e0ab58f.chunk.css.map",
-    "static/js/2.d030ea51.chunk.js.LICENSE.txt": "/react-leaflet-vanilla/static/js/2.d030ea51.chunk.js.LICENSE.txt"
+    "main.css": "/react-leaflet-vanilla/build/static/css/main.4e0ab58f.chunk.css",
+    "main.js": "/react-leaflet-vanilla/build/static/js/main.f2b73551.chunk.js",
+    "main.js.map": "/react-leaflet-vanilla/build/static/js/main.f2b73551.chunk.js.map",
+    "runtime-main.js": "/react-leaflet-vanilla/build/static/js/runtime-main.bd7216bf.js",
+    "runtime-main.js.map": "/react-leaflet-vanilla/build/static/js/runtime-main.bd7216bf.js.map",
+    "static/js/2.b6d4e830.chunk.js": "/react-leaflet-vanilla/build/static/js/2.b6d4e830.chunk.js",
+    "static/js/2.b6d4e830.chunk.js.map": "/react-leaflet-vanilla/build/static/js/2.b6d4e830.chunk.js.map",
+    "static/js/3.a21b49cb.chunk.js": "/react-leaflet-vanilla/build/static/js/3.a21b49cb.chunk.js",
+    "static/js/3.a21b49cb.chunk.js.map": "/react-leaflet-vanilla/build/static/js/3.a21b49cb.chunk.js.map",
+    "index.html": "/react-leaflet-vanilla/build/index.html",
+    "static/css/main.4e0ab58f.chunk.css.map": "/react-leaflet-vanilla/build/static/css/main.4e0ab58f.chunk.css.map",
+    "static/js/2.b6d4e830.chunk.js.LICENSE.txt": "/react-leaflet-vanilla/build/static/js/2.b6d4e830.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.1ece99fa.js",
-    "static/js/2.d030ea51.chunk.js",
+    "static/js/runtime-main.bd7216bf.js",
+    "static/js/2.b6d4e830.chunk.js",
     "static/css/main.4e0ab58f.chunk.css",
     "static/js/main.f2b73551.chunk.js"
   ]
